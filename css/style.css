@@ -1,0 +1,310 @@
+@charset"utf-8";
+
+/* titulo */
+@font-face {
+    font-family: titulo;
+    src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+/* subtitulo */
+@font-face {
+    font-family: subtitulo;
+    src: url('../fonts/Raleway-Light.ttf');
+}
+/* paragrafo */
+@font-face {
+    font-family: paragrafo;
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1:#e7717d;
+    --color2:#c2cad0;
+    --color3:#c2b9b0;
+    --color4:#7e685a;
+    --color5:#afd275;
+}
+
+body{
+    background-color: #c2cad0;
+}
+
+/* navegação */
+.navbar-toggler{
+    font-size: 15px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: auto;
+}
+.offcanvas{
+    background-color: var(--color3);
+}
+
+.offcanvas-header {
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+}
+
+.offcanvas-body .navbar-nav li a {
+    color: white;
+    text-align: center;
+}
+
+.offcanvas-body .navbar-nav li a:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+}
+/* ==========  fim navegação =========== */
+
+main .imagemjamille{
+    width: 200px;
+    height: 300px;
+    background-image: linear-gradient(to bottom, var(--color1), var(--color5));
+    background-image: url('../img/jamille.jpeg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+main h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-family: titulo;
+    font-weight: 300;
+    color: var(--color4);
+    margin: 0;
+}
+
+main p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: paragrafo;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+main .group-icon {
+    margin-top: 200px;
+    margin-right: 120px;
+}
+
+main .group-icon a{
+    margin-left: 10px;
+}
+
+main .group-icon a i{
+    font-size: 30px;
+    color: var(--color4);
+}
+main .group-icon a i:hover{
+    color: var(--color3);
+}
+
+main h3 {
+    font-family: subtitulo;
+    color: var(--color4);
+}
+
+main .bio {
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+main .gap{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+main .gap a{
+    margin: 5px;
+    color: var(--color2);
+    text-transform: uppercase;
+}
+
+main .gap a:hover{
+    background-color: var(--color5);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+}
+
+main .btn {
+    background-color: var(--color4);
+    border: 0 !important;
+    border-radius: 0 !important;
+    width: 100%;
+    position: relative;
+}
+
+main .col:nth-of-type(2){
+    padding: 0; 
+    margin: 0;
+}
+.col{
+    margin: 0;
+    padding: 0;
+}
+main .imagemlateral{
+    background-color: #afd275;
+    background-image: url('../img/casa.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* página minha formação */
+section#minhaformacao{
+    height: auto;
+}
+
+section#minhaformacao h2 {
+    color: var(--color4);
+    font-family: titulo;
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 30px 0;
+}
+
+section#minhaformacao .listum , section#minhaformacao .listdois{
+    list-style: none;
+    padding: 0 15%;
+}
+section#minhaformacao ul li {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+section#minhaformacao span {
+    text-transform: uppercase;
+    font-family: paragrafo;
+}
+
+section#minhaformacao ul li i{
+    font-size: 20px;
+    color: var(--color4);
+    align-items: center;
+}
+
+section#minhaformacao ul .titulo{
+    font-family: titulo;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+/* página meu trabalho */
+section#portfolio{
+    height: auto;
+}
+section#portfolio .margin-top-portfolio{
+    margin-top: 10%;
+}
+section#portfolio h2 {
+    color: var(--color4);
+    font-family: titulo;
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 30px 0;
+}
+
+section#portfolio h5 {
+    color: var(--color4) !important;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section#portfolio p {
+    text-transform: uppercase;
+    font-family: paragrafo;
+    font-weight: 500;
+}
+
+section#portfolio .card{
+    border: 0 !important;
+    border-radius: 0 !important;
+    background-color: transparent;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+section#portfolio img{
+    border-radius: 80px 80px 0px 0px;
+    height: 250px;
+}
+
+/* página trabalhe comigo */
+section#contato{
+    height: 100vh;
+}
+
+section#contato h2 {
+    color: var(--color4);
+    font-family: titulo;
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 30px 0;
+    margin: 0;
+    padding: 0;
+}
+
+section#contato p{
+    text-transform: uppercase;
+    font-family: paragrafo;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+section#contato i {
+    color: var(--color4);
+}
+/* paragrafo */
+section#contato .col {
+    padding: 30px 0;
+    margin: auto;
+    display: block;
+}
+
+section#contato  .col:nth-of-type(1) p{
+    font-family: paragrafo;
+    font-weight: 500;
+}
+section#contato  .col:nth-of-type(1) i{
+    padding-right: 5px;
+}
+
+section#contato .imagemjamilleum {
+    background-color: aquamarine;
+    background-image: url('../img/jamille1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: auto;
+    width: 350px;
+    height: 500px;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+}
+
+/* icone do whatsapp */
+.imagemzap{
+    width: 48px;
+    height: 48px;
+    background-image: url('../img/Whatsapp.png');
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

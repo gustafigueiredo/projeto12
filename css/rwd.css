@@ -1,0 +1,91 @@
+@charset"utf-8";
+
+
+@media (max-width:1000px) {
+    main .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .row-bloco1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .row-bloco1 .imagemjamille{
+        margin: auto;
+    }
+
+    main .row-bloco1 h1{
+        margin: 10px !important;
+    }
+   
+    main .row-bloco2 .group-icon{
+        margin: 20px auto;
+        float: none;
+    }
+
+    /* pagina minha formação */
+    section#minhaformacao{
+        height: auto;
+    }
+
+    /* pagina portfolio */
+    section#portfolio{
+        height: auto;
+    }
+
+    /* página trabalhe comigo ! */
+    section#contato {
+        height: auto;
+    }
+
+    section#contato .imagemjamilleum {
+        width: 100%;
+    }
+}
+
+/*página meu trabalho - .card */
+@media (max-width:800px){
+    section#portfolio .row{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+
+@media (max-width:500px){
+    .navbar-toggler{
+        margin-right: 5px !important;
+    }
+    main .gap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .bio {
+        text-align: center !important;
+    }
+
+    /* seção minha formação */
+    section#minhaformacao .listum , section#minhaformacao .listdois{
+        padding: none !important;
+    }
+
+    /* imagem jamile */
+    section#contato .imagemjamilleum {
+        background-color: aquamarine;
+    background-image: url('../img/jamille1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: auto;
+    width: 200px !important;
+    height: 300px !important;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    }
+}
